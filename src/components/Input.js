@@ -5,24 +5,21 @@ import { InputBase, makeStyles } from '@material-ui/core';
 const useStyles = makeStyles(
   theme => ({
     root: {
-      borderWidth: 1,
-      borderStyle: 'solid',
-      borderColor: theme.palette.secondary.main,
-      borderRadius: theme.shape.borderRadius,
-      lineHeight: '40px',
-      transition: theme.transitions.create([
-        'border-color',
-        'background-color',
-      ]),
-      '&$focused': {
+      '&$focused $input': {
         borderColor: theme.palette.primary.main,
         backgroundColor: fade(theme.palette.primary.main, 0.08),
       },
     },
     focused: {},
     input: {
-      padding: 0,
-      height: 40,
+      borderWidth: 1,
+      borderStyle: 'solid',
+      borderColor: theme.palette.secondary.main,
+      borderRadius: theme.shape.borderRadius,
+      transition: theme.transitions.create([
+        'border-color',
+        'background-color',
+      ]),
     },
   }),
   { name: 'Input' }

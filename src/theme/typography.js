@@ -1,6 +1,6 @@
 export default {
   fontFamily: '"Rubik", "Helvetica", "Arial", sans-serif',
-  fontSize: 15,
+  fontSize: 14,
   h1: {
     fontSize: 48,
     fontWeight: 300,
